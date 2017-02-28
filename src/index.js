@@ -15,7 +15,7 @@ if ("document" in window.self) {
 
 // Full polyfill for browsers with no classList support
 // Including IE < Edge missing SVGElement.classList
-if (!("classList" in document.createElement("_")) 
+if (!("classList" in document.createElement("_"))
 	|| document.createElementNS && !("classList" in document.createElementNS("http://www.w3.org/2000/svg","g"))) {
 
 (function (view) {
@@ -184,7 +184,7 @@ if (objCtr.defineProperty) {
 
 }(window.self));
 
-} else {
+}
 // There is full or partial native classList support, so just check if we need
 // to normalize the add/remove and toggle APIs.
 
@@ -235,6 +235,3 @@ if (objCtr.defineProperty) {
 }());
 
 }
-
-}
-
